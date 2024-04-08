@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>very futuristic navbar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar-container">
+            <div class="navigation">
+              <nav class="navbar">
+                <ul class="nav-list">
+                  <li><a href="#" target="_blank" class="nav-link">Home</a></li>
+                  <li><a href="#" target="_blank" class="nav-link">About</a></li>
+                  <li><a href="#" target="_blank" class="nav-link">Contact</a></li>
+                  <li><a href="#" target="_blank" class="nav-link">Support</a></li>
+                  <div class="line"></div>
+                  <li><a><i class="fa fa-search" onclick="show()">
+                    </i></a></li>
+                </ul>
+              </nav>
+            </div>
+    </header>    
+      <div class="dropdown" id="anotherFunction">
+       <div class="drop">HTML</div>
+        <div class="drop">CSS</div>
+        <div class="drop">Javascript</div>
+        <div class="drop">Sass</div>
+      </div>
+      <!--&& Javascript part -->
+<script>
+function show() {
+  document.getElementById('anotherFunction').classList.toggle('Active');
+}
+</script>
+</body>
+</html>
